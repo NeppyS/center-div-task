@@ -1,0 +1,13 @@
+{
+    "version": 2,
+    "builds": [
+      { "src": "public/*.html", "use": "@now/static" }
+    ],
+    "routes": [
+      { "src": "/about", "dest": "/public/about.html" },
+      { "src": "/api/*", "dest": "https://api.example.com/:splat" },
+      { "handle": "filesystem" }
+    ],
+    "public": "/public"
+  }
+  
